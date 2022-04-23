@@ -1036,13 +1036,144 @@ Comments
 
 // code here can NOT use carName
 
-function myFunction() {
-  let carName = "Volvo";
-  // code here CAN use carName
-return carName;
+// function myFunction() {
+//   let carName = "Volvo";
+//   // code here CAN use carName
+// return carName;
 
-}
+// }
 
-console.log(myFunction());
+// console.log(myFunction());
 
-// code here can NOT use carName
+// // code here can NOT use carName
+
+// const someObj = {
+//   propName: "John",
+//   Age : 17,
+//   propYes : 'diaz'
+// };
+
+// function propPrefix(str) {
+//   const s = "prop";
+//   return s + str;
+// }
+
+// const someProp = propPrefix("Yes");
+// console.log(someObj[someProp]);
+
+
+// // Setup
+// function phoneticLookup(val) {
+//   let result = "";
+
+//   // Only change code below this line
+//   var lookup = {
+// "alpha": "Adams",
+// "bravo": "Boston",
+// "charlie": "Chicago",
+// "delta": "Denver",
+// "echo": "Easy",
+// "foxtrot": "Frank"
+//   }
+
+//   // Only change code above this line
+//   return result = lookup[val];
+// }
+
+// lookup = phoneticLookup("alpha");
+
+
+
+// console.log(lookup);
+
+
+// // const alpha = {
+// //   1:"Z",
+// //   2:"Y",
+// //   3:"X",
+// //   4:"W",
+// //   24:"C",
+// //   25:"B",
+// //   26:"A"
+// // };
+
+// // alpha[2];
+// // alpha[24];
+
+// // const value = 25;
+// // alpha[value];
+
+// // console.log(alpha[value]);
+
+
+// // Setup
+// function lookingUp(x) {
+//   let result = "";
+
+//   var lookup = {
+//    "alpha": "Adams",
+//    "bravo": "Boston",
+//    "charlie": "Chicago",  
+//    "delta": "Denver",    
+//    "echo": "Easy",     
+//    "foxtrot": "Frank"
+//   }
+//   result = lookup[x];
+  
+//   return result;
+// }
+
+// console.log(lookingUp('charlie'));
+
+// const myObj = {
+//   top: "hat",
+//   bottom: "pants"
+// };
+
+// myObj.hasOwnProperty("top");
+// myObj.hasOwnProperty("middle");
+
+// console.log(myObj.hasOwnProperty('middle'))
+
+// function checkObj(obj, checkProp) {
+//   // Only change code below this line
+//   // checkObj(obj) = {
+//   //   joh: 'yes',
+//   //   ana: 'no'
+//   // }
+//   if(obj.hasOwnProperty(checkObj)){
+//     return obj[checkProp]
+//   } else{
+//     return 'Not Found'
+//   }
+  
+//   // Only change code above this line
+// }
+
+// console.log(checkObj.hasOwnProperty('obj'));
+
+// const myMusic = [
+//   {
+//     "artist": "Billy Joel",
+//     "title": "Piano Man",
+//     "release_year": 1973,
+//     "formats": [
+//       "CD",
+//       "8T",
+//       "LP"
+//     ],
+//     "gold": true
+//   },
+
+//   {
+//     'artist': 'vin dicel',
+
+//     'title' : 'fast',
+//     'release_year': 2000,
+//     'formats': [
+//       'cd',
+//       'sportify',
+//       'apple music'
+//     ]
+//   }
+// ];
