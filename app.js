@@ -1215,10 +1215,92 @@ Comments
 // };
 
 // // Only change code below this line
-// function updateRecords(records, albumTitle, artist, tracks) {
-//   if(albumTitle != artist & tracks != '')
+// function updateRecords(records, id, prop, value) {
+//   if(prop !== "tracks" && value !== ""){
+//    records[id][prop] = value};
+// }
+
+
+
+// // Setup
+// var recordCollection = {
+//   2548: {
+//     albumTitle: 'Slippery When Wet',
+//     artist: 'Bon Jovi',
+//     tracks: ['Let It Rock', 'You Give Love a Bad Name']
+//   },
+//   2468: {
+//     albumTitle: '1999',
+//     artist: 'Prince',
+//     tracks: ['1999', 'Little Red Corvette']
+//   },
+//   1245: {
+//     artist: 'Robert Palmer',
+//     tracks: []
+//   },
+//   5439: {
+//     albumTitle: 'ABBA Gold'
+//   }
+// };
+
+// // Only change code below this line
+// function updateRecords(records, id, prop, value) {
+//   if (prop !== 'tracks' && value !== "") {
+//     records[id][prop] = value;
+//   } else if (prop === "tracks" && records[id].hasOwnProperty("tracks") === false) {
+//     records[id][prop] = [value];
+//   } else if (prop === "tracks" && value !== "") {
+//     records[id][prop].push(value);
+//   } else if (value === "") {
+//     delete records[id][prop];
+//   }
 //   return records;
+// }
+// updateRecords(recordCollection, 1245, 'tourist', 'Cena');
+
+// console.log(recordCollection[2548])
+
+// const greet = function(){
+//   return 'hello world';
 // }
 
 // console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'));
 
+// const bill = (products, tax) => {
+//   let total = 0;
+//   for(let i =  0; i < products.length; i++){ 
+//     total += products[i] + products[i] * tax;
+//   }
+//     return total;
+// }
+
+// console.log(bill([10,15,55], 0.2));
+
+// const myFunc = (callbackFunc) => {
+//   // do something
+//   let value = 50;
+//   callbackFunc(value);
+// };
+
+// myFunc(value => {
+//   // do something
+//   console.log(value);
+// })
+
+// let people = ['mario', 'mercedes', 'john'];
+
+// people.forEach((val) => {
+//   console.log(val);
+// })
+
+// const ourArray = [];
+// let i = 0;
+
+// while (i < 5) {
+//   ourArray.push(i);
+//   i++;
+// }
+
+// console.log(ourArray)
+
+//Mientras i sea 0 o menor el array ''ourArray'' agregara 1 digito como indica .push hasta que llegue a 5.
